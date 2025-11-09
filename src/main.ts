@@ -9,7 +9,8 @@ import './style.css'
 //import './bases/Tarea-01'
 //import {getHeroesByOwner} from './bases/08-imp-exp'
 //import { Owner } from './data/heroes.data'
-import './bases/09-promises'
+//import './bases/09-promises'
+import './bases/10-fetch-api'
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
