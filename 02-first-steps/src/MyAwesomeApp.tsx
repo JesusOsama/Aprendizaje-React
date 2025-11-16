@@ -38,9 +38,7 @@ export const MyAwesomeApp = () => {
 
             <h1>{isActive ? 'Activo' : 'No Activo'}</h1>
 
-            <p
-                style={myStyles}
-            >{JSON.stringify(address)}</p>
+            <p style={myStyles}>{JSON.stringify(address)}</p>
         </>
     )
 }
