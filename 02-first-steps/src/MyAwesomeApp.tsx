@@ -7,6 +7,8 @@
 //     )
 // }
 
+import type { CSSProperties } from "react";
+
 const firstName = "Jesus";
 const lastName = "VS";
 
@@ -21,6 +23,13 @@ const address = {
 
 export const MyAwesomeApp = () => {
 
+    const myStyles: CSSProperties = {
+        backgroundColor: '#fafafa',
+        borderRadius: 20,
+        padding: 10,
+        marginTop: 30
+    };
+
     return (
         <>
             <h1>{firstName}</h1>
@@ -29,7 +38,9 @@ export const MyAwesomeApp = () => {
 
             <h1>{isActive ? 'Activo' : 'No Activo'}</h1>
 
-            <p>{JSON.stringify(address)}</p>
+            <p
+                style={myStyles}
+            >{JSON.stringify(address)}</p>
         </>
     )
 }
